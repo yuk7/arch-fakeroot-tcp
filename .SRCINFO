@@ -15,6 +15,8 @@ pkgbase = fakeroot-tcp
 	depends = sed
 	depends = util-linux
 	depends = sh
+	provides = fakeroot=1.21-2
+	conflicts = fakeroot
 	source = http://ftp.debian.org/debian/pool/main/f/fakeroot/fakeroot-tcp_1.21.orig.tar.gz
 	source = silence-dlerror.patch
 	md5sums = be5c9a0e516869fca4a6758105968e5a
