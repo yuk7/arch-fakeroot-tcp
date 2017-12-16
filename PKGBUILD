@@ -15,6 +15,8 @@ groups=('base-devel')
 install=fakeroot.install
 depends=('glibc' 'filesystem' 'sed' 'util-linux' 'sh')
 makedepends=('po4a')
+provides=("${_pkgname}=${pkgver}-${pkgrel}")
+conflicts=("${_pkgname}")
 source=(http://ftp.debian.org/debian/pool/main/f/$_pkgname/${_pkgname}_${pkgver}.orig.tar.gz
         silence-dlerror.patch)
 md5sums=('be5c9a0e516869fca4a6758105968e5a'
